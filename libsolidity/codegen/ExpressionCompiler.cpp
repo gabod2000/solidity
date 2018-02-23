@@ -1839,7 +1839,7 @@ void ExpressionCompiler::appendExternalFunctionCall(
 		if (dynamicReturnSize)
 		{
 			solAssert(haveReturndatacopy, "");
-			m_context.appendInlineAssembly("returndatacopy(return_data_start, 0, returndatasize())", {"return_data_start"});
+			m_context.appendInlineAssembly("{ returndatacopy(return_data_start, 0, returndatasize()) }", {"return_data_start"});
 		}
 		else
 			solAssert(retSize > 0, "");
