@@ -556,7 +556,7 @@ void AsmAnalyzer::warnOnInstructions(solidity::Instruction _instr, SourceLocatio
 			_location,
 			"The \"" +
 			boost::to_lower_copy(instructionInfo(_instr).name)
-			+ "\" instruction is only available for Byzantium-compateble VMs. " +
+			+ "\" instruction is only available for Byzantium-compatible VMs. " +
 			"You are currently compiling for \"" +
 			m_evmVersion.name() +
 			"\", where it will be interpreted as an invalid instruction."
