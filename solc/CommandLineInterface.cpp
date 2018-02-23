@@ -808,7 +808,7 @@ bool CommandLineInterface::processInput()
 		if (m_args.count(g_argLibraries))
 			m_compiler->setLibraries(m_libraries);
 		if (m_args.count(g_strEVMVersion))
-			m_compiler->setEVMVersion();
+			m_compiler->setEVMVersion(evmVersion);
 		// TODO: Perhaps we should not compile unless requested
 		bool optimize = m_args.count(g_argOptimize) > 0;
 		unsigned runs = m_args[g_argOptimizeRuns].as<unsigned>();
