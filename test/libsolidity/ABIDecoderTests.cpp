@@ -791,7 +791,7 @@ BOOST_AUTO_TEST_CASE(return_dynamic_types_cross_call_simple)
 	if (m_evmVersion == EVMVersion::homestead())
 		return;
 
-	string sourceCode = R"(`
+	string sourceCode = R"(
 		contract C {
 			function dyn() public returns (bytes) {
 				return "1234567890123456789012345678901234567890";
