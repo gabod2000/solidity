@@ -122,10 +122,7 @@ public:
 		m_optimizeRuns = _runs;
 	}
 
-	void setEVMVersion(EVMVersion _version = EVMVersion{})
-	{
-		m_evmVersion = _version;
-	}
+	void setEVMVersion(EVMVersion _version = EVMVersion{});
 
 	/// Sets the list of requested contract names. If empty, no filtering is performed and every contract
 	/// found in the supplied sources is compiled. Names are cleared iff @a _contractNames is missing.
