@@ -224,6 +224,7 @@ void RPCSession::test_setChainParams(vector<string> const& _accounts)
 			"blockReward": "0x",
 			"allowFutureBlocks": true,
 			"homesteadForkBlock": "0x00",
+			"byzantiumForkBlock": "0x00",
 			"EIP150ForkBlock": "0x00",
 			"EIP158ForkBlock": "0x00"
 		},
