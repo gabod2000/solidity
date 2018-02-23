@@ -51,6 +51,9 @@ public:
 			return {};
 	}
 
+	bool operator==(EVMVersion const& _other) const { return m_version == _other.m_version; }
+	bool operator!=(EVMVersion const& _other) const { return !this->operator==(_other); }
+
 	std::string name() const { return m_version == Version::Byzantium ? "byzantium" : "homestead"; }
 
 	bool hasReturndatacopy() const { return m_version == Version::Byzantium; }
